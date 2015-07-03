@@ -1,0 +1,50 @@
+{
+  "name": "ng-input",
+  "version": "0.0.1",
+  "description": "Text Input Effects directives",
+  "repository": "git@github.com:cesardeazevedo/ng-input.git",
+  "main": "dist/ng-input.js",
+  "scripts": {
+    "test": "./node_modules/gulp/bin/gulp.js test"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive",
+    "ng-input",
+    "inputs",
+    "codrops"
+  ],
+  "author": "Cesar Augusto d. Azevedo <cesardeazevedo@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "del": "^0.1.3",
+    "event-stream": "^3.1.7",
+    "gulp": "^3.8.8",
+    "gulp-angular-templatecache": "^1.4.2",
+    "gulp-concat": "^2.4.1",
+    "gulp-connect": "^2.0.6",
+    "gulp-header": "^1.1.1",
+    "gulp-jshint": "^1.8.5",
+    "gulp-karma": "0.0.4",
+    "gulp-less": "^1.3.6",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-minify-html": "^0.1.5",
+    "gulp-open": "^0.3.0",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "harp": "^0.14.0",
+    "jshint-stylish": "^1.0.0",
+    "karma": "^0.12.24",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "mversion": "^1.6.0"
+  }
+}

@@ -1,0 +1,49 @@
+/* Haruki */
+
+.input--haruki
+  margin: 4em 1em 1em
+
+.input__field--haruki
+  padding: 0.4em 0.25em
+  width: 100%
+  background: transparent
+  color: #AFB5BB
+  font-size: 1.55em
+
+.input__label--haruki
+  position: absolute
+  width: 100%
+  text-align: left
+  pointer-events: none
+
+.input__label-content--haruki
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__label--haruki
+  &::before, &::after
+    content: ''
+    position: absolute
+    left: 0
+    z-index: -1
+    width: 100%
+    height: 4px
+    background: #6a7989
+    -webkit-transition: -webkit-transform 0.3s
+    transition: transform 0.3s
+  &::before
+    top: 0
+  &::after
+    bottom: 0
+
+.input__field--haruki:focus + .input__label--haruki .input__label-content--haruki, .input--filled .input__label-content--haruki
+  -webkit-transform: translate3d(0, -90%, 0)
+  transform: translate3d(0, -90%, 0)
+
+.input__field--haruki:focus + .input__label--haruki::before, .input--filled .input__label--haruki::before
+  -webkit-transform: translate3d(0, -0.5em, 0)
+  transform: translate3d(0, -0.5em, 0)
+
+.input__field--haruki:focus + .input__label--haruki::after, .input--filled .input__label--haruki::after
+  -webkit-transform: translate3d(0, 0.5em, 0)
+  transform: translate3d(0, 0.5em, 0)

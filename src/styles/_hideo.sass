@@ -1,0 +1,58 @@
+/* Hideo */
+
+.input--hideo
+  overflow: hidden
+  background: #fff
+
+.input__field--hideo
+  padding: 0.85em 0.85em 0.85em 3em
+  width: 100%
+  background: transparent
+  -webkit-transform: translate3d(1em, 0, 0)
+  transform: translate3d(1em, 0, 0)
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__label--hideo
+  position: absolute
+  padding: 1.25em 0 0
+  width: 4em
+  height: 100%
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    width: 4em
+    height: 100%
+    background: #899dda
+    -webkit-transform-origin: 0% 50%
+    transform-origin: 0% 50%
+    -webkit-transition: -webkit-transform 0.3s
+    transition: transform 0.3s
+
+.icon--hideo
+  color: #fff
+  -webkit-transform: scale3d(1, 1, 1)
+  /* Needed for Chrome bug
+  transform: scale3d(1, 1, 1)
+  -webkit-transform-origin: 0% 50%
+  transform-origin: 0% 50%
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__label-content--hideo
+  position: absolute
+  top: 100%
+
+.input__field--hideo:focus
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+  .input__label--hideo
+    &::before
+      -webkit-transform: scale3d(0.8, 1, 1)
+      transform: scale3d(0.8, 1, 1)
+    .icon--hideo
+      -webkit-transform: scale3d(0.6, 0.6, 1)
+      transform: scale3d(0.6, 0.6, 1)

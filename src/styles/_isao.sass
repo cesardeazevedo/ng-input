@@ -1,0 +1,69 @@
+/* Isao */
+
+.input__field--isao
+  z-index: 10
+  padding: 0.75em 0.1em 0.25em
+  width: 100%
+  background: transparent
+  color: #afb3b8
+
+.input__label--isao
+  position: relative
+  overflow: hidden
+  padding: 0
+  width: 100%
+  color: #dadada
+  text-align: left
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    width: 100%
+    height: 7px
+    background: #dadada
+    -webkit-transform: scale3d(1, 0.4, 1)
+    transform: scale3d(1, 0.4, 1)
+    -webkit-transform-origin: 50% 100%
+    transform-origin: 50% 100%
+    -webkit-transition: -webkit-transform 0.3s, background-color 0.3s
+    transition: transform 0.3s, background-color 0.3s
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+  &::after
+    content: attr(data-content)
+    position: absolute
+    top: 0
+    left: 0
+    padding: 0.75em 0.15em
+    color: #da7071
+    opacity: 0
+    -webkit-transform: translate3d(0, 50%, 0)
+    transform: translate3d(0, 50%, 0)
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s
+    transition: opacity 0.3s, transform 0.3s
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+    pointer-events: none
+
+.input__field--isao:focus + .input__label--isao
+  &::before
+    background-color: #da7071
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+  pointer-events: none
+  &::after
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.input__label-content--isao
+  padding: 0.75em 0.15em
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s
+  transition: opacity 0.3s, transform 0.3s
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+
+.input__field--isao:focus + .input__label--isao .input__label-content--isao
+  opacity: 0
+  -webkit-transform: translate3d(0, -50%, 0)
+  transform: translate3d(0, -50%, 0)
