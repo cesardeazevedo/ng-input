@@ -2,12 +2,11 @@
  * ng-input
  * 
  * Author: Cesar Augusto d. Azevedo <cesardeazevedo@outlook.com>
- * Version: 0.0.1 - 2015-07-03T08:01:13.040Z
+ * Version: 0.0.1 - 2015-07-03T17:37:27.196Z
  * License: MIT
  */
 
 
-angular.module("ng-input").run(["$templateCache", function($templateCache) {$templateCache.put("ng-input.html","<span class=\"input input--{{ theme }}\"><input class=\"input__field input__field--{{ theme }}\" type=\"{{type}}\" name=\"{{name}}\" ng-minlength=\"ngMinlength\" ng-maxlength=\"ngMaxlength\" ng-required=\"ngRequired\" ng-pattern=\"ngPattern\" ng-charge=\"ngCharge\" ng-trim=\"ngTrim\" ng-model=\"ngModel\"> <label class=\"input__label input__label--{{ theme }} input__label--{{ theme }}-color-1\"><span class=\"input__label-content input__label-content--{{ theme }}\">{{ label }}</span></label></span>");}]);
 'use strict';
 
 (function(){
@@ -77,3 +76,5 @@ angular.module("ng-input").run(["$templateCache", function($templateCache) {$tem
         }
     }
 })();
+
+angular.module("ng-input").run(["$templateCache", function($templateCache) {$templateCache.put("ng-input.html","<span class=\"input input--{{ theme }}\"><input class=\"input__field input__field--{{ theme }}\" type=\"{{type}}\" name=\"{{name}}\" ng-minlength=\"ngMinlength\" ng-maxlength=\"ngMaxlength\" ng-required=\"ngRequired\" ng-pattern=\"ngPattern\" ng-charge=\"ngCharge\" ng-trim=\"ngTrim\" ng-model=\"ngModel\"> <label class=\"input__label input__label--{{ theme }} input__label--{{ theme }}-color-1\"><span class=\"input__label-content input__label-content--{{ theme }}\">{{ label }}</span></label></span>");}]);
