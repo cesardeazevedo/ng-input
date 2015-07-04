@@ -58,7 +58,7 @@ gulp.task('scripts', function() {
           , spare: true
           , quotes: true
         }))
-        .pipe(templateCache({ module: 'ng-input' }));
+        .pipe(templateCache({ module: 'ngInput' }));
     }
 
     function buildDistJS(){

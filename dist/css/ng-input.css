@@ -2,7 +2,7 @@
  * ng-input
  * 
  * Author: Cesar Augusto d. Azevedo <cesardeazevedo@outlook.com>
- * Version: 0.0.1 - 2015-07-04T07:57:30.996Z
+ * Version: 0.0.2 - 2015-07-04T23:45:29.801Z
  * License: MIT
  */
 
@@ -393,9 +393,9 @@
 
 .input__field--minoru:focus {
   box-shadow: 0px 0px 0px 2px #eca29b; }
-  .input__field--minoru:focus .input__label--minoru {
+  .input__field--minoru:focus + .input__label--minoru {
     pointer-events: none; }
-    .input__field--minoru:focus .input__label--minoru::after {
+    .input__field--minoru:focus + .input__label--minoru::after {
       -webkit-animation: anim-shadow 0.3s forwards;
       animation: anim-shadow 0.3s forwards; }
 
@@ -508,6 +508,7 @@
 
 .icon--hideo {
   color: #fff;
+  font-size: 30px !important;
   -webkit-transform: scale3d(1, 1, 1);
   /* Needed for Chrome bug */
   transform: scale3d(1, 1, 1);
@@ -523,10 +524,10 @@
 .input__field--hideo:focus {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-  .input__field--hideo:focus .input__label--hideo::before {
+  .input__field--hideo:focus + .input__label--hideo::before {
     -webkit-transform: scale3d(0.8, 1, 1);
     transform: scale3d(0.8, 1, 1); }
-  .input__field--hideo:focus .input__label--hideo .icon--hideo {
+  .input__field--hideo:focus + .input__label--hideo .icon--hideo {
     -webkit-transform: scale3d(0.6, 0.6, 1);
     transform: scale3d(0.6, 0.6, 1); }
 
@@ -565,11 +566,11 @@
 
 .input__field--kyo:focus {
   z-index: 10000; }
-  .input__field--kyo:focus .input__label--kyo {
+  .input__field--kyo:focus + .input__label--kyo {
     color: #fff; }
-    .input__field--kyo:focus .input__label--kyo .input__label-content--kyo {
+    .input__field--kyo:focus + .input__label--kyo .input__label-content--kyo {
       z-index: 10000; }
-    .input__field--kyo:focus .input__label--kyo::after {
+    .input__field--kyo:focus + .input__label--kyo::after {
       opacity: 1; }
 
 /* Akira */
