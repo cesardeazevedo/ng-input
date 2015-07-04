@@ -4,14 +4,14 @@
     angular.module('ng-input', [])
     .directive('ngInput', ngInput);
 
-    ngInput.$inject = ['$compile'];
-    function ngInput($compile){
+    ngInput.$inject = [];
+    function ngInput(){
 
         var uniqueId = 0;
         return {
             restrict: 'E'
           , replace: true
-          , templateUrl: 'src/ng-input.html'
+          , templateUrl: 'ng-input.html'
           , scope: {
                 theme:       '@'
               , type:        '@'
@@ -26,44 +26,53 @@
               , ngModel:     '='
             }
           , compile: compile
-          , controller: controller
         };
 
-        function compile(scope, element, attributes){
+        function compile(){
 
             return {
-                post: function(scope, element, attributes){
+                post: function(scope, element){
 
                     scope.input = element.find('input');
                     scope.label = element.find('label');
 
-                    var item = 'input_' + uniqueId++;
+                    var item       = 'input_' + uniqueId++
+                      , inputClass = 'input--filled';
 
                     scope.input.attr('id' , item);
                     scope.label.attr('for', item);
 
+                    onInputChange();
+                    scope.input.bind('focus', onInputFocus);
+                    scope.input.bind('blur', onInputBlur);
+
+                    //To detect browser autofill
+                    scope.input.bind('change', onInputChange);
+
+                    function onInputChange(){
+                        if(scope.input.val().trim() !== '')
+                            addClass();
+                    }
+
+                    function onInputFocus(){
+                        addClass();
+                    }
+
+                    function onInputBlur(){
+                        if(scope.input.val().trim() === '')
+                            removeClass();
+                    }
+
+                    function addClass(){
+                        element.addClass(inputClass);
+                    }
+
+                    function removeClass(){
+                        element.removeClass(inputClass);
+                    }
+
                 }
             };
-        }
-
-        function controller($scope, $element){
-
-            var input = $element.find('input')[0];
-
-            if(input.value.trim() !== '')
-                $element.addClass('input--filled');
-
-            input.addEventListener('focus', onInputFocus);
-            input.addEventListener('blur', onInputBlur);
-
-            function onInputFocus(){
-                $element.addClass('input--filled');
-            }
-
-            function onInputBlur(){
-                if(input.value.trim() === '')
-                    $element.removeClass('input--filled');
-            }
         }
     }
 })();
