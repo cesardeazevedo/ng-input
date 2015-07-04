@@ -52,7 +52,7 @@ gulp.task('clean', function(cb) {
 gulp.task('scripts', function() {
 
     function buildTemplates() {
-        return gulp.src('src/**/*.html')
+        return gulp.src('src/ng-input.html')
         .pipe(minifyHtml({
             empty: true
           , spare: true
