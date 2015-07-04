@@ -1,3 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'codropsicons';
+    src:url('../fonts/codropsicons/codropsicons.eot');
+    src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -32,6 +45,22 @@ a {
 }
 a:hover, a:focus {
   color: #404d5b;
+}
+
+button {
+    border: none;
+    background: #DFDFE0;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+pre {
+    padding: 25px;
+    font-size: 22px;
+    background: #eee;
 }
 
 .container {

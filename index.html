@@ -3,28 +3,37 @@
     <head>
         <meta charset='UTF-8'>
         <title></title>
-        <link rel='stylesheet' href='public/styles/normalize.css'>
-        <link rel='stylesheet' href='public/styles/demo.css'>
+        <link rel='stylesheet' href='public/css/normalize.css'>
+        <link rel='stylesheet' href='public/css/demo.css'>
         <link rel='stylesheet' href='dist/css/ng-input.css'>
     </head>
     <body ng-app='app'>
         <!-- <ng-input theme='akira' /> -->
         <div class='container'>
             <header class='codrops-header'>
-            <div class='codrops-links'>
-                <a class='codrops-icon codrops-icon--prev' href='http://tympanus.net/Tutorials/SlidingHeaderLayout/' title='Previous Demo'><span>Previous Demo</span></a>
-                <a class='codrops-icon codrops-icon--drop' href='http://tympanus.net/codrops/?p=21991' title='Back to the a'><span>Back to the Codrops a</span></a>
-            </div>
-            <h1>Text Input Effects <span>Simple ideas for enhancing text input interactions</span></h1>
+            <h1><b><</b>ng-input<b>></b></h1>
+            <h2>Text Input Effects For Angular <span>Angular directives for enhancing text input interactions</span></h2>
+
+            <h2>
+            <a href="http://tympanus.net/codrops/?p=21991" target="_BLANK">check article at Codrops</a>
+            </h2>
+            <h1>Install</h1>
+            <p>Install using bower</p>
+            <pre>$ bower install ng-input</pre>
+            <p>Install using npm</p>
+            <pre>$ npm install ng-input</pre>
+            <h1>Usage</h1>
+            <pre><b><</b>ng-input theme='haruki' label='First Name' ng-model='first_name'<b>><</b>/ng-input<b>></b></pre>
             <nav class='codrops-demos'>
             <a href='index.html' class='current-demo'>Set 1</a>
             <a href='index2.html'>Set 2</a>
             </nav>
+            <br>
+            <h1>Themes</h1>
             </header>
             <section class='content bgcolor-1'>
                 <h2 class='nomargin-bottom'>
                     Haruki
-                    {{ first_name }}
                 </h2>
                 <form method='POST' action='/'>
                     <!-- <input type="text" label='test' required /> -->
@@ -33,10 +42,13 @@
                     <ng-input theme='haruki' type='email' label='Email' ng-model='email' ng-required='true'></ng-input>
                     <br>
                     <br>
-                    <button type='submit'>Submit</button>
+                    <button type='submit'>REQUIRED TEST SUBMIT</button>
                 </form>
+                <small>{{ first_name }}</small>
+                <small>{{ last_name }}</small>
                 <br>
-                <pre><b><</b>ng-input theme='haruki' label='First Name' ng-model='first_name' ng-required='true'<b>><</b>/ng-input<b>></b>
+                <small>{{ email }}</small>
+                <br>
                 </pre>
             </section>
             <section class='content'>
@@ -45,8 +57,6 @@
                 <ng-input theme='hoshi' label='Street'></ng-input>
                 <ng-input theme='hoshi' label='Town'></ng-input>
                 <br>
-                <pre><b><</b>ng-input theme='hoshi' label='Name' ng-model='name' ng-required='true'<b>><</b>/ng-input<b>></b>
-                </pre>
                 <p>Inspired by Andrej Radisic's <a href='https://dribbble.com/shots/1785176-Jawbreaker-input-field'>Jawbreaker input field</a></p>
             </section>
             <section class='content bgcolor-4'>
