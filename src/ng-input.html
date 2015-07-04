@@ -10,7 +10,11 @@
            ng-trim='ngTrim'
            ng-model='ngModel'
         />
-    <label class='input__label input__label--{{ theme }} input__label--{{ theme }}-color-1'>
+        <label class='input__label input__label--{{ theme }} input__label--{{ theme }}-color-{{ color }}' data-content="{{ label }}">
+        <i ng-if="icon" class="{{ icon }}"></i>
+        <svg ng-if="theme === 'madoka'" class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+            <path d="m0,0l404,0l0,77l-404,0l0,-77z"></path>
+        </svg>
         <span class='input__label-content input__label-content--{{ theme }}'>{{ label }}</span>
     </label>
 </span>

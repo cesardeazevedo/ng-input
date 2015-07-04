@@ -1,10 +1,9 @@
 'use strict';
 
 (function(){
-    angular.module('ng-input', [])
+    angular.module('ngInput', [])
     .directive('ngInput', ngInput);
 
-    ngInput.$inject = [];
     function ngInput(){
 
         var uniqueId = 0;
@@ -17,6 +16,8 @@
               , type:        '@'
               , label:       '@'
               , name:        '@'
+              , icon:        '@'
+              , color:       '@'
               , ngRequired:  '='
               , ngMinlength: '='
               , ngMaxlength: '='
@@ -31,10 +32,15 @@
         function compile(){
 
             return {
-                post: function(scope, element){
+                post: function(scope, element, attributes){
 
                     scope.input = element.find('input');
                     scope.label = element.find('label');
+
+                    //Default options
+                    attributes.theme = attributes.theme || 'kaede';
+                    attributes.type  = attributes.type  || 'text';
+                    attributes.color = attributes.color || '1';
 
                     var item       = 'input_' + uniqueId++
                       , inputClass = 'input--filled';
