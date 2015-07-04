@@ -1,5 +1,5 @@
 
-<h1 align="center">ng-input</h1>
+<h1 align="center"><a href="http://cesardeazevedo.github.io/ng-input/">ng-input</a></h1>
 <p align="center">
 
 
@@ -12,6 +12,86 @@
 </p>
 
 </p>
+
+ng-input is a fork from [codrops - Text Input Effects](https://github.com/codrops/TextInputEffects), to work with angular directives.
+
+# Demo
+
+
+[Demo](http://cesardeazevedo.github.io/ng-input/)
+
+# Install
+
+####Install using `bower`
+
+    bower install ng-input
+  
+####Install using `npm`
+
+    npm install ng-input
+
+# Usage
+
+  ```html
+  <ng-input theme='hoshi'></ng-input>
+  ```
+
+# Options
+
+- theme
+- type
+- label
+
+default attributes from default angular [input directive](https://docs.angularjs.org/api/ng/directive/input)
+
+- name
+- ng-model
+- ng-required
+- ng-minlength
+- ng-maxlength
+- ng-pattern
+- ng-change
+- ng-trim
+
+# Themes
+
+### Our Themes
+
+ > TODO
+
+### [Codrops Themes](http://tympanus.net/Development/TextInputEffects/)
+
+- Haruki
+- Hoshi
+- Kuro
+- Jiro
+- Minoru
+- Yoko
+- Hideo
+- Kyo
+- Akira
+- Ichiro
+- Juro
+- Madoka
+- Kaede
+- Isao
+
+
+# Contributing
+
+Feel free to add your own style.
+
+1. Fork it!
+2. Create your feature branch: git checkout -b my-new-feature
+3. Commit your changes: git commit -m 'Add some feature'
+4. Push to the branch: git push origin my-new-feature
+5. Submit a pull request
+
+# Credits
+
+Credit goes to [codrops](http://tympanus.net/codrops/) for an **AWESOME** work with [Text Input Effects](https://github.com/codrops/TextInputEffects)
+
+[check their article](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/)
 
 
 # License
