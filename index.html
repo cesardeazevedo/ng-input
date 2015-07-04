@@ -2,10 +2,15 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
         <link rel='stylesheet' href='public/css/normalize.css'>
         <link rel='stylesheet' href='public/css/demo.css'>
         <link rel='stylesheet' href='dist/css/ng-input.css'>
+        <link rel="stylesheet" href="public/components/mdi/css/materialdesignicons.min.css" media='all'>
+        <script src='public/components/angular/angular.min.js'></script>
+        <script src='dist/ng-input.js'></script>
+        <script src='public/js/app.js'></script>
     </head>
     <body ng-app='app'>
         <!-- <ng-input theme='akira' /> -->
@@ -36,7 +41,6 @@
                     Haruki
                 </h2>
                 <form method='POST' action='/'>
-                    <!-- <input type="text" label='test' required /> -->
                     <ng-input theme='haruki' label='First Name' ng-model='first_name' ng-required='true'></ng-input>
                     <ng-input theme='haruki' label='Last Name' ng-model='last_name' ng-required='true'></ng-input>
                     <ng-input theme='haruki' type='email' label='Email' ng-model='email' ng-required='true'></ng-input>
@@ -54,8 +58,8 @@
             <section class='content'>
                 <h2>Hoshi</h2>
                 <ng-input theme='hoshi' label='Name'></ng-input>
-                <ng-input theme='hoshi' label='Street'></ng-input>
-                <ng-input theme='hoshi' label='Town'></ng-input>
+                <ng-input theme='hoshi' label='Street' color='2'></ng-input>
+                <ng-input theme='hoshi' label='Town' color='3'></ng-input>
                 <br>
                 <p>Inspired by Andrej Radisic's <a href='https://dribbble.com/shots/1785176-Jawbreaker-input-field'>Jawbreaker input field</a></p>
             </section>
@@ -85,9 +89,9 @@
             </section>
             <section class='content'>
                 <h2>Hideo</h2>
-                <ng-input theme='hideo' label='Username'></ng-input>
-                <ng-input theme='hideo' label='Email'></ng-input>
-                <ng-input theme='hideo' label='Password'></ng-input>
+                <ng-input theme='hideo' label='Username' icon='icon icon--hideo mdi mdi-account'></ng-input>
+                <ng-input theme='hideo' label='Email' icon='icon icon--hideo mdi mdi-message-text'></ng-input>
+                <ng-input theme='hideo' label='Password' icon='icon icon--hideo mdi mdi-lock'></ng-input>
             </section>
             <section class='content bgcolor-3'>
                 <h2>Kyo</h2>
@@ -119,21 +123,16 @@
             </section>
             <section class='content'>
                 <h2>Kaede</h2>
-                <ng-input theme='kaeda' label='First Name'></ng-input>
-                <ng-input theme='kaeda' label='Last Name'></ng-input>
-                <ng-input theme='kaeda' label='Website'></ng-input>
+                <ng-input theme='kaede' label='First Name'></ng-input>
+                <ng-input theme='kaede' label='Last Name'></ng-input>
+                <ng-input theme='kaede' label='Website'></ng-input>
             </section>
             <section class='content bgcolor-8'>
-            <h2>Isao</h2>
+                <h2>Isao</h2>
                 <ng-input theme='isao' label='First Name'></ng-input>
                 <ng-input theme='isao' label='Middle Name'></ng-input>
                 <ng-input theme='isao' label='Last Name'></ng-input>
             </section>
-            <!--
-            -->
         </div><!-- /container -->
     </body>
-    <script src='public/components/angular/angular.min.js'></script>
-    <script src='dist/ng-input.js'></script>
-    <script src='public/js/app.js'></script>
 </html>
