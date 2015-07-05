@@ -1,6 +1,6 @@
 {
   "name": "ng-input",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Text Input Effects directives",
   "repository": "git@github.com:cesardeazevedo/ng-input.git",
   "main": "dist/ng-input.js",

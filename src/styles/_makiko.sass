@@ -1,0 +1,40 @@
+/* Makiko */
+
+.input--makiko
+  overflow: hidden
+  background: #8781BD
+
+.input__field--makiko
+  width: 100%
+  background: transparent
+  color: #797693
+  z-index: 10
+  font-weight: 500
+
+.input__label--makiko
+  position: absolute
+  width: 100%
+  text-align: left
+  pointer-events: none
+  color: #fff
+  &::before
+    content: ''
+    position: absolute
+    width: 30px
+    height: 30px
+    top: 45%
+    left: 20px
+    background: url(../img/search.svg) no-repeat center center
+    background-size: 100%
+    -webkit-transition: -webkit-transform 0.3s
+    transition: transform 0.3s
+
+.input__label-content--makiko
+  display: block
+  padding: 1.5em 0 0 2.75em
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__field--makiko:focus + .input__label--makiko::before, .input--filled .input__label--makiko::before
+  -webkit-transform: scale3d(38, 38, 1)
+  transform: scale3d(38, 38, 1)

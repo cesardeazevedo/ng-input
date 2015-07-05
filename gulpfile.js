@@ -39,7 +39,7 @@ gulp.task('watch', function () {
     gulp.watch(['./index.html'], function(){
         reload('index.html', { stream: true });
     });
-    gulp.watch(['./src/styles/*.sass'], function(){
+    gulp.watch(['./src/styles/*.sass'], ['styles'], function(){
         reload('ng-input.css', { stream: true });
     });
     gulp.watch(['./src/**/*.js', './**/*.html'], ['scripts']);

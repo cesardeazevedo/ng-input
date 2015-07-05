@@ -1,0 +1,59 @@
+/* Nariko */
+
+.input--nariko
+  overflow: hidden
+  padding-top: 2em
+
+.input__field--nariko
+  width: 100%
+  background: transparent
+  opacity: 0
+  padding: 0.35em
+  z-index: 100
+  color: #f18292
+
+.input__label--nariko
+  width: 100%
+  bottom: 0
+  position: absolute
+  pointer-events: none
+  text-align: left
+  color: #8E9191
+  padding: 0 0.5em
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 4em
+    top: 100%
+    left: 0
+    background: #fff
+    border-top: 4px solid #6B6E6E
+    -webkit-transform: translate3d(0, -3px, 0)
+    transform: translate3d(0, -3px, 0)
+    -webkit-transition: -webkit-transform 0.3s
+    transition: transform 0.3s
+
+.input__label-content--nariko
+  padding: 0.5em 0
+  -webkit-transform-origin: 0% 100%
+  transform-origin: 0% 100%
+  -webkit-transition: -webkit-transform 0.3s, color 0.3s
+  transition: transform 0.3s, color 0.3s
+
+.input__field--nariko:focus, .input--filled .input__field--nariko
+  cursor: text
+  opacity: 1
+  -webkit-transition: opacity 0s 0.3s
+  transition: opacity 0s 0.3s
+
+.input__field--nariko:focus + .input__label--nariko::before, .input--filled .input__label--nariko::before
+  -webkit-transition-delay: 0.1s
+  transition-delay: 0.1s
+  -webkit-transform: translate3d(0, -3.3em, 0)
+  transform: translate3d(0, -3.3em, 0)
+
+.input__field--nariko:focus + .input__label--nariko .input__label-content--nariko, .input--filled .input__label-content--nariko
+  color: #6B6E6E
+  -webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1)
+  transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1)

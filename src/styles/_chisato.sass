@@ -1,0 +1,71 @@
+/* Chisato */
+
+.input--chisato
+  padding-top: 1em
+
+.input__field--chisato
+  width: 100%
+  padding: 0.8em 0.5em
+  background: transparent
+  border: 2px solid
+  color: #b5b5b5
+  -webkit-transition: border-color 0.3s
+  transition: border-color 0.3s
+
+.input__label--chisato
+  width: 100%
+  position: absolute
+  top: 0
+  text-align: left
+  overflow: hidden
+  padding: 0
+  pointer-events: none
+  -webkit-transform: translate3d(0, 3em, 0)
+  transform: translate3d(0, 3em, 0)
+
+.input__label-content--chisato
+  padding: 0 1em
+  font-weight: 400
+  color: #b5b5b5
+  &::after
+    content: attr(data-content)
+    position: absolute
+    top: -200%
+    left: 0
+    color: #da6484
+    font-weight: 800
+
+.input__field--chisato:focus, .input--filled .input__field--chisato
+  border-color: #da6484
+
+.input__field--chisato:focus + .input__label--chisato, .input--filled .input__label--chisato
+  -webkit-animation: anim-chisato-1 0.3s forwards
+  animation: anim-chisato-1 0.3s forwards
+
+.input__field--chisato:focus + .input__label--chisato .input__label-content--chisato, .input--filled .input__label-content--chisato
+  -webkit-animation: anim-chisato-2 0.3s forwards
+  animation: anim-chisato-2 0.3s forwards
+
+@-webkit-keyframes anim-chisato-1
+  0%, 50%
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  51%, 100%
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+
+@-webkit-keyframes anim-chisato-2
+  0%
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+  50%, 51%
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+  100%
+    color: transparent
+    -webkit-transform: translate3d(0, 200%, 0)
+    transform: translate3d(0, 200%, 0)

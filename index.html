@@ -17,10 +17,12 @@
         <div class='container'>
             <header class='codrops-header'>
             <h1><b><</b>ng-input<b>></b></h1>
-            <h2>Text Input Effects For Angular <span>Angular directives for enhancing text input interactions</span></h2>
+            <h2>Text Input Effects from <a href="http://tympanus.net/codrops/?p=21991">Codrops</a> for <span>Angular directives</span></h2>
 
+            <hr>
             <h2>
-            <a href="http://tympanus.net/codrops/?p=21991" target="_BLANK">check article at Codrops</a>
+                <a href="https://github.com/cesardeazevedo/ng-input">fork ng-input on github</a>
+                <iframe src="https://ghbtns.com/github-btn.html?user=cesardeazevedo&repo=ng-input&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
             </h2>
             <h1>Install</h1>
             <p>Install using bower</p>
@@ -29,18 +31,16 @@
             <pre>$ npm install ng-input</pre>
             <h1>Usage</h1>
             <pre><b><</b>ng-input theme='haruki' label='First Name' ng-model='first_name'<b>><</b>/ng-input<b>></b></pre>
-            <nav class='codrops-demos'>
-            <a href='index.html' class='current-demo'>Set 1</a>
-            <a href='index2.html'>Set 2</a>
-            </nav>
             <br>
             <h1>Themes</h1>
+            <h2>Codrops Themes</h2>
+            <a href="http://tympanus.net/codrops/?p=21991" target="_BLANK">check article at Codrops</a>
             </header>
             <section class='content bgcolor-1'>
                 <h2 class='nomargin-bottom'>
                     Haruki
                 </h2>
-                <form method='POST' action='/'>
+                <form method='POST'>
                     <ng-input theme='haruki' label='First Name' ng-model='first_name' ng-required='true'></ng-input>
                     <ng-input theme='haruki' label='Last Name' ng-model='last_name' ng-required='true'></ng-input>
                     <ng-input theme='haruki' type='email' label='Email' ng-model='email' ng-required='true'></ng-input>
@@ -53,7 +53,6 @@
                 <br>
                 <small>{{ email }}</small>
                 <br>
-                </pre>
             </section>
             <section class='content'>
                 <h2>Hoshi</h2>
@@ -132,6 +131,79 @@
                 <ng-input theme='isao' label='First Name'></ng-input>
                 <ng-input theme='isao' label='Middle Name'></ng-input>
                 <ng-input theme='isao' label='Last Name'></ng-input>
+            </section>
+            <section class='content bgcolor-3'>
+                <h2>Manami</h2>
+                <ng-input theme='manami' label='Username'></ng-input>
+                <ng-input theme='manami' label='Website'></ng-input>
+                <ng-input theme='manami' type='email' label='Invitation Code'></ng-input>
+            </section>
+            <section class='content bgcolor-7'>
+                <h2>Nariko</h2>
+                <ng-input theme='nariko' label='First Name'></ng-input>
+                <ng-input theme='nariko' label='Middle Name'></ng-input>
+                <ng-input theme='nariko' label='Last Name'></ng-input>
+                <br>
+                <p>Inspired by Andrej Radisic's <a href='https://dribbble.com/shots/1785176-Jawbreaker-input-field'>Jawbreaker input field</a></p>
+            </section>
+            <section class='content bgcolor-1'>
+                <h2>Nao</h2>
+                <ng-input theme='nao' label='Street'></ng-input>
+                <ng-input theme='nao' label='City'></ng-input>
+                <ng-input theme='nao' label='Region'></ng-input>
+            </section>
+            <section class='content'>
+                <h2>Yoshiko</h2>
+                <ng-input theme='yoshiko' label="Bird's Color "></ng-input>
+                <ng-input theme='yoshiko' label='Wing Span'></ng-input>
+                <ng-input theme='yoshiko' label='Beak Length'></ng-input>
+            </section>
+            <section class='content bgcolor-10'>
+                <h2>Shoko</h2>
+                <ng-input theme='shoko' label='Player Name'></ng-input>
+                <ng-input theme='shoko' label='Village'></ng-input>
+                <ng-input theme='shoko' label='World'></ng-input>
+            </section>
+            <section class='content bgcolor-4'>
+                <h2>Chisato</h2>
+                <ng-input theme='chisato' label='First Name'></ng-input>
+                <ng-input theme='chisato' label='Middle Name'></ng-input>
+                <ng-input theme='chisato' label='Last Name'></ng-input>
+            </section>
+            <section class='content bgcolor-3'>
+                <h2>Makiko</h2>
+                <ng-input theme='makiko' label='Search'></ng-input>
+            </section>
+            <section class='content bgcolor-9'>
+                <h2>Sae</h2>
+                <ng-input theme='sae' label='Eamil Address' icon='icon icon--sae mdi mdi-facebook'></ng-input>
+                <ng-input theme='sae' label='Invitation Code'></ng-input>
+                <ng-input theme='sae' label='Full Name'></ng-input>
+                <br>
+            </section>
+            <section class='content bgcolor-4'>
+                <h2>Kozakura</h2>
+                <ng-input theme='kozakura' label='Name'></ng-input>
+                <ng-input theme='kozakura' label='Email'></ng-input>
+                <ng-input theme='kozakura' label='Website'></ng-input>
+            </section>
+            <section class='content bgcolor-1'>
+                <h2>Fumi</h2>
+                <ng-input theme='fumi' label='Course Name' icon='icon icon--fumi mdi mdi-book-open'></ng-input>
+                <ng-input theme='fumi' label='Degree' icon='icon icon--fumi mdi mdi-school'></ng-input>
+                <ng-input theme='fumi' label='Work Place' icon='icon icon--fumi mdi mdi-briefcase'></ng-input>
+            </section>
+            <section class='content bgcolor-4'>
+                <h2>Ruri</h2>
+                <ng-input theme='ruri' label='Username'></ng-input>
+                <ng-input theme='ruri' label='Website'></ng-input>
+                <ng-input theme='ruri' label='Invitation Code'></ng-input>
+            </section>
+            <section class='content bgcolor-3'>
+                <h2>Kohana</h2>
+                <ng-input theme='kohana' label='Time' icon='icon icon--kohana mdi mdi-timelapse'></ng-input>
+                <ng-input theme='kohana' label='Line' icon='icon icon--kohana mdi mdi-car' ></ng-input>
+                <ng-input theme='kohana' label='Phone' icon='icon icon--kohana mdi mdi-phone'></ng-input>
             </section>
         </div><!-- /container -->
     </body>

@@ -1,0 +1,80 @@
+/* Kozakura
+
+.input--kozakura
+  overflow: hidden
+  padding-bottom: 1em
+
+.input__field--kozakura
+  padding: 0.25em 0.5em
+  margin-top: 1.25em
+  width: 100%
+  background: transparent
+  color: #2F3238
+  font-size: 1.55em
+  opacity: 0
+
+.input__label--kozakura
+  width: 100%
+  text-align: left
+  position: absolute
+  top: 1em
+  pointer-events: none
+  overflow: hidden
+  padding: 0 0.25em
+  -webkit-transform: translate3d(1em, 2.75em, 0)
+  transform: translate3d(1em, 2.75em, 0)
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__label-content--kozakura
+  color: #A4A5A6
+  padding: 0.4em 0 0.25em
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+  &::after
+    content: attr(data-content)
+    position: absolute
+    font-weight: 800
+    top: 100%
+    left: 0
+    height: 100%
+    width: 100%
+    color: #fff
+    padding: 0.25em 0
+    text-transform: uppercase
+    letter-spacing: 1px
+    font-size: 0.85em
+
+.graphic--kozakura
+  fill: #494E57
+  pointer-events: none
+  top: 1em
+  bottom: 0px
+  height: 4.5em
+  z-index: -1
+  -webkit-transition: -webkit-transform 0.7s, fill 0.7s
+  transition: transform 0.7s, fill 0.7s
+  -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1)
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1)
+
+.input__field--kozakura:focus, .input--filled .input__field--kozakura
+  -webkit-transition: opacity 0s 0.35s
+  transition: opacity 0s 0.35s
+  opacity: 1
+
+.input__field--kozakura:focus + .input__label--kozakura, .input--filled .input__label--kozakura
+  -webkit-transition-delay: 0.15s
+  transition-delay: 0.15s
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+
+.input__field--kozakura:focus + .input__label--kozakura .input__label-content--kozakura, .input--filled .input__label-content--kozakura
+  -webkit-transition-delay: 0.15s
+  transition-delay: 0.15s
+  -webkit-transform: translate3d(0, -100%, 0)
+  transform: translate3d(0, -100%, 0)
+
+.input__field--kozakura:focus ~ .graphic--kozakura, .input--filled .graphic--kozakura
+  fill: #fff
+  -webkit-transform: translate3d(-66.6%, 0, 0)
+  transform: translate3d(-66.6%, 0, 0)

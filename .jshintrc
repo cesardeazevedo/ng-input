@@ -11,6 +11,7 @@
   "eqnull": true,
   "expr": true,
   "globalstrict": true,
+  "strict": false,
   "laxbreak": true,
   "laxcomma": true,
   "loopfunc": true,

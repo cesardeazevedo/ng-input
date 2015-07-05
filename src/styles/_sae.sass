@@ -1,0 +1,71 @@
+/* Sae */
+
+.input--sae
+  overflow: hidden
+  width: 200px
+  margin: 0 2em 2em
+
+.input__field--sae
+  background: transparent
+  width: 100%
+  color: #fff
+  padding: 1em 0 0.25em
+  font-weight: 500
+
+.input__label--sae
+  position: absolute
+  width: 100%
+  text-align: left
+  color: #7771ab
+  padding: 0
+  height: 100%
+  pointer-events: none
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 2px
+    background: #fff
+    bottom: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+    -webkit-transition: -webkit-transform 0.3s
+    transition: transform 0.3s
+
+.icon--sae
+  position: absolute
+  bottom: 0
+  font-size: 1em
+  opacity: 0.5
+  left: -30px
+  color: #fff
+  pointer-events: none
+  -webkit-transform: translate3d(205px, 0, 0)
+  transform: translate3d(205px, 0, 0)
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__label-content--sae
+  padding: 0
+  font-size: 1.3em
+  display: block
+  -webkit-transform-origin: 0 0
+  transform-origin: 0 0
+  -webkit-transform: translate3d(0, 1.85em, 0)
+  transform: translate3d(0, 1.85em, 0)
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.input__field--sae:focus + .input__label--sae .input__label-content--sae, .input--filled .input__label-content--sae
+  -webkit-transform: translate3d(0, 0, 0) scale3d(0.7, 0.7, 1)
+  transform: translate3d(0, 0, 0) scale3d(0.7, 0.7, 1)
+
+.input__field--sae:focus + .input__label--sae::after, .input--filled .input__label--sae::after
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+
+.input__field--sae:focus + .input__label--sae .icon--sae, .input--filled .icon--sae
+  -webkit-transition-delay: 0.01s
+  transition-delay: 0.01s
+  -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, -90deg)
+  transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, -90deg)
