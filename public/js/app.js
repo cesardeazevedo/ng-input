@@ -1,1 +1,1 @@
-angular.module('app', ['ng-input']);
+angular.module('app', ['ngInput']);

@@ -1,0 +1,47 @@
+/* Nao
+
+.input--nao
+  overflow: hidden
+  padding-top: 1em
+
+.input__field--nao
+  padding: 0.5em 0em 0.25em
+  width: 100%
+  background: transparent
+  color: #9da8b2
+  font-size: 1.25em
+
+.input__label--nao
+  position: absolute
+  top: 0.95em
+  font-size: 0.85em
+  left: 0
+  display: block
+  width: 100%
+  text-align: left
+  padding: 0em
+  pointer-events: none
+  -webkit-transform-origin: 0 0
+  transform-origin: 0 0
+  -webkit-transition: -webkit-transform 0.2s 0.15s, color 1s
+  transition: transform 0.2s 0.15s, color 1s
+  -webkit-transition-timing-function: ease-out
+  transition-timing-function: ease-out
+
+.graphic--nao
+  stroke: #92989e
+  pointer-events: none
+  -webkit-transition: -webkit-transform 0.7s, stroke 0.7s
+  transition: transform 0.7s, stroke 0.7s
+  -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1)
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1)
+
+.input__field--nao:focus + .input__label--nao, .input--filled .input__label--nao
+  color: #333
+  -webkit-transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1)
+  transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1)
+
+.input__field--nao:focus ~ .graphic--nao, .input--filled .graphic--nao
+  stroke: #333
+  -webkit-transform: translate3d(-66.6%, 0, 0)
+  transform: translate3d(-66.6%, 0, 0)

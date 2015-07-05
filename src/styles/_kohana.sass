@@ -1,0 +1,55 @@
+/* Kohana */
+
+.input--kohana
+  overflow: hidden
+  background: #fff
+
+.input__field--kohana
+  width: 100%
+  background: transparent
+  padding-left: 2.75em
+  color: #6a7989
+
+.input__label--kohana
+  position: absolute
+  width: 100%
+  text-align: left
+  pointer-events: none
+  color: #D2D2D2
+
+.input__label-content--kohana
+  display: inline-block
+  width: auto
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s
+  transition: transform 0.3s, opacity 0.3s
+
+.icon--kohana
+  display: inline-block
+  margin-top: 0.2em
+  -webkit-transform: translate3d(-2em, 0, 0)
+  transform: translate3d(-2em, 0, 0)
+  -webkit-transition: -webkit-transform 0.3s
+  transition: transform 0.3s
+
+.icon--kohana.mdi
+    transform: translate3d(-2em, 0, 0)
+    font-size: 30px
+    vertical-align: sub
+
+.input__field--kohana:focus + .input__label--kohana .input__label-content--kohana, .input--filled .input__label-content--kohana
+  opacity: 0
+  -webkit-transform: translate3d(100px, 0, 0)
+  transform: translate3d(100px, 0, 0)
+
+  .mdi
+      transform: translate3d(100px, 0, 0)
+
+.input__label-content--kohana, .icon--kohana, .input__field--kohana:focus + .input__label--kohana .input__label-content--kohana, .input--filled .input__label-content--kohana
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
+  transition-timing-function: cubic-bezier(0.5, 0, 0.3, 1)
+
+.input__field--kohana:focus + .input__label--kohana .icon--kohana, .input--filled .icon--kohana
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)

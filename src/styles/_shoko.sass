@@ -1,0 +1,54 @@
+/* Shoko */
+
+.input--shoko
+  overflow: hidden
+  padding-bottom: 2.5em
+
+.input__field--shoko
+  padding: 0
+  margin-top: 1.2em
+  width: 100%
+  background: transparent
+  color: #fff
+  font-size: 1.55em
+
+.input__label--shoko
+  position: absolute
+  top: 2em
+  left: 0
+  display: block
+  width: 100%
+  text-align: left
+  padding: 0em
+  text-transform: uppercase
+  letter-spacing: 1px
+  color: #A09C9C
+  pointer-events: none
+  -webkit-transform-origin: 0 0
+  transform-origin: 0 0
+  -webkit-transition: -webkit-transform 0.2s 0.1s, color 0.3s
+  transition: transform 0.2s 0.1s, color 0.3s
+  -webkit-transition-timing-function: ease-out
+  transition-timing-function: ease-out
+
+.graphic--shoko
+  stroke: #A09C9C
+  pointer-events: none
+  stroke-width: 2px
+  top: 1.25em
+  bottom: 0px
+  height: 3.275em
+  -webkit-transition: -webkit-transform 0.7s, stroke 0.7s
+  transition: transform 0.7s, stroke 0.7s
+  -webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1)
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1)
+
+.input__field--shoko:focus + .input__label--shoko, .input--filled .input__label--shoko
+  color: #A58282
+  -webkit-transform: translate3d(0, 3.5em, 0) scale3d(0.85, 0.85, 1)
+  transform: translate3d(0, 3.5em, 0) scale3d(0.85, 0.85, 1)
+
+.input__field--shoko:focus ~ .graphic--shoko, .input--filled .graphic--shoko
+  stroke: #A58282
+  -webkit-transform: translate3d(-66.6%, 0, 0)
+  transform: translate3d(-66.6%, 0, 0)

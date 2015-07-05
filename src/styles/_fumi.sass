@@ -1,0 +1,137 @@
+/* Fumi */
+
+.input--fumi
+  background: #fff
+  overflow: hidden
+  padding: 0.25em 0
+  &::after
+    content: ''
+    width: 1px
+    position: absolute
+    top: 0.5em
+    bottom: 0.5em
+    left: 2.5em
+    background: #f0f0f0
+    z-index: 100
+
+.input__field--fumi
+  background: transparent
+  padding: 1.5em 1em 0.25em 3.15em
+  width: 100%
+  color: #00aeef
+
+.input__label--fumi
+  position: absolute
+  width: 100%
+  text-align: left
+  padding-left: 4.5em
+  pointer-events: none
+
+.icon--fumi
+  width: 2em
+  position: absolute
+  top: 0
+  left: 0
+  padding: 1em 0 0 0.5em
+  font-size: 30px!important
+
+.input__label-content--fumi
+  padding: 1.7em 0
+  display: inline-block
+  -webkit-transform-origin: 0 0
+  transform-origin: 0 0
+  span
+    display: inline-block
+
+.input__field--fumi:focus + .input__label--fumi .input__label-content--fumi, .input--filled .input__label-content--fumi
+  -webkit-animation: anim-fumi-1 0.3s forwards
+  animation: anim-fumi-1 0.3s forwards
+
+@-webkit-keyframes anim-fumi-1
+  50%
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  51%
+    -webkit-transform: translate3d(0, -3em, 0) scale3d(0.85, 0.85, 1)
+    transform: translate3d(0, -3em, 0) scale3d(0.85, 0.85, 1)
+
+  100%
+    color: #a3a3a3
+    -webkit-transform: translate3d(0, -1.1em, 0) scale3d(0.85, 0.85, 1)
+    transform: translate3d(0, -1.1em, 0) scale3d(0.85, 0.85, 1)
+
+
+@keyframes anim-fumi-1
+  50%
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  51%
+    -webkit-transform: translate3d(0, -3em, 0) scale3d(0.85, 0.85, 1)
+    transform: translate3d(0, -3em, 0) scale3d(0.85, 0.85, 1)
+
+  100%
+    color: #a3a3a3
+    -webkit-transform: translate3d(0, -1.1em, 0) scale3d(0.85, 0.85, 1)
+    transform: translate3d(0, -1.1em, 0) scale3d(0.85, 0.85, 1)
+
+
+.input__field--fumi:focus + .input__label--fumi .icon--fumi, .input--filled .icon--fumi
+  -webkit-animation: anim-fumi-2 0.3s forwards
+  animation: anim-fumi-2 0.3s forwards
+
+@-webkit-keyframes anim-fumi-2
+  50%
+    opacity: 1
+    -webkit-transform: translate3d(0, -3em, 0)
+    transform: translate3d(0, -3em, 0)
+
+  50.25%
+    opacity: 0
+    -webkit-transform: translate3d(0, -3em, 0)
+    transform: translate3d(0, -3em, 0)
+
+  50.75%
+    opacity: 0
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  51%
+    opacity: 1
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    color: #00aeef
+
+
+@keyframes anim-fumi-2
+  50%
+    opacity: 1
+    -webkit-transform: translate3d(0, -3em, 0)
+    transform: translate3d(0, -3em, 0)
+
+  50.25%
+    opacity: 0
+    -webkit-transform: translate3d(0, -3em, 0)
+    transform: translate3d(0, -3em, 0)
+
+  50.75%
+    opacity: 0
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  51%
+    opacity: 1
+    -webkit-transform: translate3d(0, 3em, 0)
+    transform: translate3d(0, 3em, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    color: #00aeef

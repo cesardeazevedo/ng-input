@@ -1,0 +1,54 @@
+/* Kaede */
+
+.input--kaede
+  display: block
+  overflow: hidden
+  margin: 1em auto 2em
+  background: #EFEEEE
+
+.input__field--kaede
+  position: absolute
+  top: 0
+  right: 100%
+  width: 60%
+  height: 100%
+  background: #fff
+  color: #9DABBA
+  -webkit-transition: -webkit-transform 0.5s
+  transition: transform 0.5s
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+
+.input__label--kaede
+  z-index: 10
+  display: block
+  width: 100%
+  height: 100%
+  text-align: left
+  cursor: text
+  -webkit-transform-origin: 0% 50%
+  transform-origin: 0% 50%
+  -webkit-transition: -webkit-transform 0.5s
+  transition: transform 0.5s
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+
+.input__label-content--kaede
+  padding: 1.5em 0
+
+.input__field--kaede:focus, .input--filled .input__field--kaede
+  -webkit-transform: translate3d(100%, 0, 0)
+  transform: translate3d(100%, 0, 0)
+  -webkit-transition-delay: 0.06s
+  transition-delay: 0.06s
+
+.input__field--kaede:focus + .input__label--kaede, .input--filled .input__label--kaede
+  -webkit-transform: translate3d(60%, 0, 0)
+  transform: translate3d(60%, 0, 0)
+  pointer-events: none
+
+@media screen and (max-width: 34em)
+  .input__field--kaede:focus + .input__label--kaede, .input--filled .input__label--kaede
+    -webkit-transform: translate3d(65%, 0, 0) scale3d(0.65, 0.65, 1)
+    transform: translate3d(65%, 0, 0) scale3d(0.65, 0.65, 1)
+    pointer-events: none
