@@ -14,12 +14,7 @@ module.exports = function(config) {
             , 'bower_components/angular-sanitize/angular-sanitize.js'
             , 'bower_components/angular-mocks/angular-mocks.js'
 
-            // , 'dist/css/ng-input.css',
-            // app
-            , 'src/ng-input.js'
-
-            // templates
-            , 'src/ng-input.html'
+            , 'dist/ng-input.js'
 
             // tests
             , 'test/**/*.spec.js'
