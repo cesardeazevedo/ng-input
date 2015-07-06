@@ -9,6 +9,10 @@
 <a href="http://badge.fury.io/js/ng-input">
 <img src="https://badge.fury.io/js/ng-input.svg" />
 </a>
+<a href="https://travis-ci.org/cesardeazevedo/ng-input">
+<img src="https://travis-ci.org/cesardeazevedo/ng-input.svg">
+</a>
+
 </p>
 
 </p>
