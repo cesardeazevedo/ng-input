@@ -120,12 +120,6 @@ gulp.task('karma', function(done) {
     }, done);
 });
 
-gulp.task('karma-serve', function(done){
-    karma.start({
-        configFile: __dirname + '/karma.conf.js'
-    }, done);
-});
-
 function handleError(err) {
     console.log(err.toString());
     this.emit('end');
@@ -134,5 +128,4 @@ function handleError(err) {
 gulp.task('build', ['clean', 'scripts', 'styles']);
 gulp.task('serve', ['open', 'watch']);
 gulp.task('default', ['build', 'test']);
-gulp.task('test', ['build', 'jshint-test', 'karma']);
-gulp.task('serve-test', ['build', 'watch', 'jshint-test', 'karma-serve']);
+gulp.task('test', ['jshint-test', 'karma']);
