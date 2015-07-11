@@ -8,12 +8,11 @@
         <link rel='stylesheet' href='public/css/demo.css'>
         <link rel='stylesheet' href='dist/css/ng-input.css'>
         <link rel="stylesheet" href="public/components/mdi/css/materialdesignicons.min.css" media='all'>
-        <script src='public/components/angular/angular.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js'></script>
         <script src='dist/ng-input.js'></script>
         <script src='public/js/app.js'></script>
     </head>
     <body ng-app='app'>
-        <!-- <ng-input theme='akira' /> -->
         <div class='container'>
             <header class='codrops-header'>
             <h1><b><</b>ng-input<b>></b></h1>
@@ -30,6 +29,8 @@
             <p>Install using npm</p>
             <pre>$ npm install ng-input</pre>
             <h1>Usage</h1>
+            <p>Inject the ngInput module</p>
+            <pre>angular.module('app', ['ngInput']);</pre>
             <pre><b><</b>ng-input theme='haruki' label='First Name' ng-model='first_name'<b>><</b>/ng-input<b>></b></pre>
             <br>
             <h1>Themes</h1>

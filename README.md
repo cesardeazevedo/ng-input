@@ -9,6 +9,10 @@
 <a href="http://badge.fury.io/js/ng-input">
 <img src="https://badge.fury.io/js/ng-input.svg" />
 </a>
+<a href="https://travis-ci.org/cesardeazevedo/ng-input">
+<img src="https://travis-ci.org/cesardeazevedo/ng-input.svg">
+</a>
+
 </p>
 
 </p>
@@ -32,6 +36,14 @@ ng-input is a fork from [codrops - Text Input Effects](https://github.com/codrop
 
 # Usage
 
+Include the `ngInput` as a dependency for your app.
+
+```js
+angular.module('myApp', ['ngInput']);
+```
+
+add the directive to your html.
+
   ```html
   <ng-input theme='hoshi'></ng-input>
   ```
@@ -41,6 +53,8 @@ ng-input is a fork from [codrops - Text Input Effects](https://github.com/codrop
 - theme
 - type
 - label
+- color
+- icon
 
 default attributes from default angular [input directive](https://docs.angularjs.org/api/ng/directive/input)
 
@@ -75,6 +89,18 @@ default attributes from default angular [input directive](https://docs.angularjs
 - Madoka
 - Kaede
 - Isao
+- Manami
+- Nariko
+- Nao
+- Yoshiko
+- Shoko
+- Chisato
+- Makiko
+- Sae
+- Kozakura
+- Fumi
+- Ruri
+- Kohana
 
 
 # Contributing
