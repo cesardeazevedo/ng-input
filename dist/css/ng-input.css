@@ -2,12 +2,15 @@
  * ng-input
  * 
  * Author: Cesar Augusto d. Azevedo <cesardeazevedo@outlook.com>
- * Version: 0.0.3 - 2015-07-05T07:37:29.527Z
+ * Version: 0.0.4 - 2015-07-15T04:25:17.571Z
  * License: MIT
  */
 
 
 /* set 1 */
+input:invalid {
+  box-shadow: none; }
+
 .input {
   position: relative;
   z-index: 1;
@@ -1343,9 +1346,12 @@
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s; }
 
+.icon--sae.mdi {
+  transform: translate3d(205px, 0, 0); }
+
 .input__label-content--sae {
   padding: 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
   display: block;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;

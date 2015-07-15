@@ -2,7 +2,7 @@
  * ng-input
  * 
  * Author: Cesar Augusto d. Azevedo <cesardeazevedo@outlook.com>
- * Version: 0.0.3 - 2015-07-05T07:37:29.517Z
+ * Version: 0.0.4 - 2015-07-15T04:25:17.562Z
  * License: MIT
  */
 
@@ -63,6 +63,10 @@
 
                     //To detect browser autofill
                     scope.input.bind('change', onInputChange);
+
+                    scope.$watch(function(){ return scope.input.val(); }, function(newValue){
+                        onInputChange();
+                    });
 
                     function onInputChange(){
                         if(scope.input.val().trim() !== '')

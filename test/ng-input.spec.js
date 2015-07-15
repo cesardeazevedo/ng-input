@@ -60,4 +60,13 @@ describe('ng-input', function() {
         element.isolateScope().input.triggerHandler('blur');
         expect(element.hasClass(addedClass)).toBe(false);
     });
+
+    it('Should change ng-model which will be watched insides directives and expect input--filled class ', function(done){
+        var value = 'newValue';
+        var addedClass = 'input--filled';
+        element = create('<ng-input ng-model="first_name"></ng-input>');
+        scope.first_name = value;
+        scope.$digest();
+        expect(element.hasClass(addedClass)).toBe(true);
+    });
 });
