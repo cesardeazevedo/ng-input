@@ -55,6 +55,10 @@
                     //To detect browser autofill
                     scope.input.bind('change', onInputChange);
 
+                    scope.$watch(function(){ return scope.input.val(); }, function(newValue){
+                        onInputChange();
+                    });
+
                     function onInputChange(){
                         if(scope.input.val().trim() !== '')
                             addClass();
