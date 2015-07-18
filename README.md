@@ -48,6 +48,26 @@ add the directive to your html.
   <ng-input theme='hoshi'></ng-input>
   ```
 
+# Base Styles
+To make it work as the demo page, there is some css properties that you should include.
+
+```css
+    *, *:after, *:before {
+        box-sizing: border-box;
+    }
+    
+    input{
+        font-size: 100%
+    }
+```
+and for bigger
+```css
+    .input{
+        font-size: 150%
+    }
+```
+
+
 # Options
 
 - theme
@@ -66,6 +86,14 @@ default attributes from default angular [input directive](https://docs.angularjs
 - ng-pattern
 - ng-change
 - ng-trim
+
+# Icons
+
+The examples are using [material design icons](https://materialdesignicons.com/), you should declare `icon icon--theme mdi mdi-account` to make it work.
+
+````html
+<ng-input theme='fumi' icon='icon icon--fumi mdi mdi-account'></ng-input>
+```
 
 # Themes
 
