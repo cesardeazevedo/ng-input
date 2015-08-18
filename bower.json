@@ -1,11 +1,11 @@
 {
   "name": "ng-input",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "authors": [
     "Cesar Augusto d. Azevedo <cesardeazeved@outlook.com>"
   ],
   "description": "Text Input Effects directives",
-  "main": "dist/ng-input.js, dist/ng-input.js",
+  "main": ["dist/ng-input.js", "dist/ng-input.js"],
   "license": "MIT",
   "private": false,
   "ignore": [
