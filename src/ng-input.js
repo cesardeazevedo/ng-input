@@ -18,11 +18,11 @@
               , name:        '@'
               , icon:        '@'
               , color:       '@'
+              , ngChange:    '&ngChange'
               , ngRequired:  '='
               , ngMinlength: '='
               , ngMaxlength: '='
               , ngPattern:   '='
-              , ngCharge:    '='
               , ngTrim:      '='
               , ngModel:     '='
             }
