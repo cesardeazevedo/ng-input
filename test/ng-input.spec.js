@@ -69,4 +69,14 @@ describe('ng-input', function() {
         scope.$digest();
         expect(element.hasClass(addedClass)).toBe(true);
     });
+
+    it('Should change value with ng-change', function(){
+        scope.change = function(){
+            scope.first_name = 'newValue';
+        };
+        element = create('<ng-input ng-model="first_name" ng-change="change()"></ng-input>');
+        scope.$digest();
+        element.isolateScope().input.val('newValue').triggerHandler('input');
+        expect(scope.first_name).toBe('newValue');
+    });
 });
