@@ -1,6 +1,6 @@
 {
   "name": "ng-input",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "authors": [
     "Cesar Augusto d. Azevedo <cesardeazeved@outlook.com>"
   ],
@@ -12,6 +12,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "public",
     "test",
     "tests"
   ],
