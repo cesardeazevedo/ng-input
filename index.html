@@ -13,7 +13,7 @@
         <script src='public/js/app.js'></script>
     </head>
     <body ng-app='app'>
-        <div class='container'>
+        <div class='container' ng-controller='AppController'>
             <header class='codrops-header'>
             <h1><b><</b>ng-input<b>></b></h1>
             <h2>Text Input Effects from <a href="http://tympanus.net/codrops/?p=21991">Codrops</a> for <span>Angular directives</span></h2>
@@ -42,9 +42,9 @@
                     Haruki
                 </h2>
                 <form method='POST'>
-                    <ng-input theme='haruki' label='First Name' ng-model='first_name' ng-required='true'></ng-input>
-                    <ng-input theme='haruki' label='Last Name' ng-model='last_name' ng-required='true'></ng-input>
-                    <ng-input theme='haruki' type='email' label='Email' ng-model='email' ng-required='true'></ng-input>
+                    <ng-input theme='haruki' ng-change='change()'  label='First Name' ng-model='first_name' name='name_first_name' ng-required='true'></ng-input>
+                    <ng-input theme='haruki' ng-change='change2()' label='Last Name' ng-model='last_name' name='name_last_name' ng-required='true'></ng-input>
+                    <ng-input theme='haruki' ng-change='change3()' type='email' label='Email' ng-model='email' ng-required='true'></ng-input>
                     <br>
                     <br>
                     <button type='submit'>REQUIRED TEST SUBMIT</button>
