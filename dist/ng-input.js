@@ -2,7 +2,7 @@
  * ng-input
  * 
  * Author: Cesar Augusto d. Azevedo <cesardeazevedo@outlook.com>
- * Version: 0.0.6 - 2015-08-19T17:27:50.619Z
+ * Version: 0.0.8 - 2015-08-29T19:49:38.871Z
  * License: MIT
  */
 
@@ -27,11 +27,11 @@
               , name:        '@'
               , icon:        '@'
               , color:       '@'
+              , ngPattern:   '@'
               , ngChange:    '&ngChange'
               , ngRequired:  '='
               , ngMinlength: '='
               , ngMaxlength: '='
-              , ngPattern:   '='
               , ngTrim:      '='
               , ngModel:     '='
             }
