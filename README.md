@@ -91,8 +91,10 @@ default attributes from default angular [input directive](https://docs.angularjs
 
 The examples are using [material design icons](https://materialdesignicons.com/), you should declare `icon icon--theme mdi mdi-account` to make it work.
 
-````html
+```html
+
 <ng-input theme='fumi' icon='icon icon--fumi mdi mdi-account'></ng-input>
+
 ```
 
 # Themes
