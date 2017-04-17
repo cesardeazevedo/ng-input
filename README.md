@@ -26,11 +26,11 @@ ng-input is a fork from [codrops - Text Input Effects](https://github.com/codrop
 
 # Install
 
-####Install using `bower`
+#### Install using `bower`
 
     bower install ng-input
   
-####Install using `npm`
+#### Install using `npm`
 
     npm install ng-input
 
